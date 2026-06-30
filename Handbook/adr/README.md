@@ -17,10 +17,10 @@ Each ADR should include:
 
 ## Initial ADRs To Create
 
-- ADR-001” Origami Farms First
-- ADR-002” Offline First
-- ADR-003” Event Driven Architecture
-- ADR-004” Digital Twin Architecture
-- ADR-005” Observation Before Diagnosis
-- ADR-006” Explainable Intelligence
-- ADR-007” Repository as Single Source of Truth
+- ADR-001â€” Origami Farms First
+- ADR-002â€” Offline First
+- ADR-003â€” Event Driven Architecture
+- ADR-004â€” Digital Twin Architecture
+- ADR-005â€” Observation Before Diagnosis
+- ADR-006â€” Explainable Intelligence
+- ADR-007â€” Repository as Single Source of Truth
