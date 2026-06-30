@@ -18,7 +18,3 @@ It defines:
 ## Rule
 
 Nothing should be implemented unless it is specified in the handbook.
-
-## Structure
-
-See [SUMMARY.md](SUMMARY.md).
