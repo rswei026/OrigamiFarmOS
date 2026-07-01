@@ -1,6 +1,3 @@
-# File: `handbook/04-Knowledge-Model/README.md`
-
-```markdown
 ---
 title: Farm Knowledge Model
 chapter: 4
@@ -31,13 +28,13 @@ FarmOS is not designed only to store records. It is designed to preserve institu
 - [4.1 Purpose and Philosophy](04.1-Purpose-and-Philosophy.md)
 - [4.2 Knowledge Lifecycle Architecture](04.2-Knowledge-Lifecycle.md)
 - [4.3 Observation Model Architecture](04.3-Observation-Model.md)
-- 4.4 Knowledge Correlation Engine
-- 4.5 Recommendation Engine
-- 4.6 Decision Intelligence
-- 4.7 Explainable AI
-- 4.8 Knowledge Timeline
-- 4.9 Knowledge Feedback Loop
-- 4.10 AI Governance
+- [4.4 Knowledge Correlation Engine](04.4-Knowledge-Correlation-Engine.md)
+- [4.5 Recommendation Engine](04.5-Recommendation-Engine.md)
+- [4.6 Decision Intelligence](04.6-Decision-Intelligence.md)
+- [4.7 Explainable AI](04.7-Explainable-AI.md)
+- [4.8 Knowledge Timeline](04.8-Knowledge-Timeline.md)
+- [4.9 Knowledge Feedback Loop](04.9-Knowledge-Feedback-Loop.md)
+- [4.10 AI Governance](04.10-AI-Governance.md)
 
 ## Core Principle
 
@@ -54,13 +51,10 @@ Outcomes become learning.
 | 4.1 Purpose and Philosophy | Draft |
 | 4.2 Knowledge Lifecycle | Draft |
 | 4.3 Observation Model | Draft |
-| 4.4 Correlation Engine | Planned |
-| 4.5 Recommendation Engine | Planned |
-| 4.6 Decision Intelligence | Planned |
-| 4.7 Explainable AI | Planned |
-| 4.8 Knowledge Timeline | Planned |
-| 4.9 Feedback Loop | Planned |
-| 4.10 AI Governance | Planned |
-```
-
----
+| 4.4 Correlation Engine | Draft |
+| 4.5 Recommendation Engine | Draft |
+| 4.6 Decision Intelligence | Draft |
+| 4.7 Explainable AI | Draft |
+| 4.8 Knowledge Timeline | Draft |
+| 4.9 Feedback Loop | Draft |
+| 4.10 AI Governance | Draft |

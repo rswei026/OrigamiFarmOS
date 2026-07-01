@@ -1,4 +1,3 @@
-```markdown
 ---
 title: FarmOS Constitution
 document: CONSTITUTION
@@ -373,4 +372,3 @@ These principles should remain stable and define the identity of FarmOS througho
 # Motto
 
 > **Observe Reality. Build Knowledge. Empower Decisions.**
-```

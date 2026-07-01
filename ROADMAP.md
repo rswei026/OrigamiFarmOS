@@ -1,6 +1,6 @@
 # FarmOS Roadmap
 
-## Phase 1” Origami Farms Internal MVP
+## Phase 1 — Origami Farms Internal MVP
 
 Goal: build a working system for daily use at Origami Farms.
 
@@ -16,7 +16,7 @@ Scope:
 - Morning briefing
 - Offline-first tablet experience
 
-## Phase 2” Origami Farms Optimized
+## Phase 2 — Origami Farms Optimized
 
 Goal: improve based on real use.
 
@@ -29,7 +29,7 @@ Scope:
 - Profitability per animal
 - More advanced reports
 
-## Phase 3” Commercial Readiness
+## Phase 3 — Commercial Readiness
 
 Goal: prepare FarmOS for use by other farms.
 
@@ -42,7 +42,7 @@ Scope:
 - Subscription-ready architecture
 - Documentation website
 
-## Phase 4” FarmOS Professional
+## Phase 4 — FarmOS Professional
 
 Goal: support larger operations.
 
@@ -56,7 +56,7 @@ Scope:
 - Supplier evaluation
 - Advanced analytics
 
-## Phase 5” FarmOS Platform
+## Phase 5 — FarmOS Platform
 
 Goal: become an intelligent agriculture platform.
 

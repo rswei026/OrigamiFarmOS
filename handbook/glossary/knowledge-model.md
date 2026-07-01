@@ -1,6 +1,3 @@
-# File: `handbook/glossary/knowledge-model.md`
-
-```markdown
 ---
 title: Knowledge Model Glossary
 status: Draft
@@ -92,4 +89,3 @@ The authoritative digital representation of a real farm entity.
 ## Institutional Memory
 
 The long-term knowledge base of the farm, preserved independently of individual employees.
-```

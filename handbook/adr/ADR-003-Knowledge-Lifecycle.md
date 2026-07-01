@@ -1,6 +1,3 @@
-# File: `handbook/adr/ADR-003-Knowledge-Lifecycle.md`
-
-```markdown
 ---
 title: ADR-003 Knowledge Lifecycle Architecture
 adr: 003
@@ -67,6 +64,3 @@ Rejected because reporting what happened is insufficient. FarmOS must support de
 
 - ../04-Knowledge-Model/04.1-Purpose-and-Philosophy.md
 - ../04-Knowledge-Model/04.2-Knowledge-Lifecycle.md
-```
-
----

@@ -1,6 +1,3 @@
-# File: `handbook/adr/ADR-004-Observation-Before-Diagnosis.md`
-
-```markdown
 ---
 title: ADR-004 Observation Before Diagnosis
 adr: 004
@@ -68,6 +65,3 @@ Rejected because FarmOS is a decision-support platform, not a replacement for ve
 
 - ../04-Knowledge-Model/04.3-Observation-Model.md
 - ../../CONSTITUTION.md
-```
-
----
