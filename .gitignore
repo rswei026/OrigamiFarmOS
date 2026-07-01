@@ -1,0 +1,23 @@
+# Backend (Python / FastAPI)
+backend/.venv/
+backend/__pycache__/
+backend/**/__pycache__/
+backend/*.egg-info/
+backend/.pytest_cache/
+backend/.ruff_cache/
+.env
+*.pyc
+
+# Frontend (Vite / React)
+ui/node_modules/
+ui/dist/
+ui/dist-ssr/
+ui/*.local
+ui/.env
+ui/dev-dist/
+
+# Editors / OS
+.DS_Store
+.vscode/
+.idea/
+*.swp

@@ -1,0 +1,89 @@
+{
+  "app": { "name": "أوريغامي فارم أو إس" },
+  "auth": {
+    "login": "تسجيل الدخول",
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "loginCta": "ابدأ يومي",
+    "loginError": "البريد الإلكتروني أو كلمة المرور غير صحيحة",
+    "loggingIn": "جارٍ تسجيل الدخول..."
+  },
+  "nav": {
+    "briefing": "الإحاطة الصباحية",
+    "animals": "الحيوانات",
+    "flocks": "القطعان",
+    "recommendations": "التوصيات",
+    "logout": "تسجيل الخروج"
+  },
+  "briefing": {
+    "title": "صباح الخير، {{name}}",
+    "subtitle": "إليك ما يحتاج إلى اهتمام اليوم.",
+    "urgent": "أولوية عاجلة وعالية",
+    "noUrgent": "لا توجد توصيات عاجلة حالياً. عمل جيد.",
+    "feedWarnings": "تحذيرات مخزون العلف",
+    "daysRemaining": "{{days}} أيام متبقية",
+    "todaysActivity": "نشاط اليوم",
+    "milkRecorded": "تم تسجيل الحليب",
+    "eggsRecorded": "تم تسجيل البيض",
+    "observationsRecorded": "تم تسجيل {{count}} ملاحظة",
+    "notYet": "ليس بعد",
+    "done": "تم",
+    "startDay": "ابدأ يومي"
+  },
+  "quickActions": {
+    "feed": "تغذية",
+    "milk": "حليب",
+    "eggs": "جمع البيض",
+    "observe": "ملاحظة"
+  },
+  "recommendation": {
+    "confidence": "الثقة",
+    "priority": "الأولوية",
+    "suggestedAction": "الإجراء المقترح",
+    "missingInfo": "معلومات ناقصة",
+    "accept": "قبول",
+    "reject": "رفض",
+    "monitor": "مراقبة",
+    "reasonRequired": "يجب إدخال سبب لرفض التوصية.",
+    "reason": "السبب",
+    "submit": "إرسال",
+    "cancel": "إلغاء",
+    "status": "الحالة",
+    "noRecommendations": "لا توجد توصيات مطابقة لهذا التصفية."
+  },
+  "animal": {
+    "register": "تسجيل حيوان",
+    "tagNumber": "رقم الوسم",
+    "name": "الاسم",
+    "species": "النوع",
+    "breed": "السلالة",
+    "sex": "الجنس",
+    "male": "ذكر",
+    "female": "أنثى",
+    "status": "الحالة",
+    "timeline": "السجل الزمني",
+    "recordFeed": "تسجيل تغذية",
+    "recordMilk": "تسجيل حليب",
+    "recordObservation": "تسجيل ملاحظة"
+  },
+  "flock": {
+    "register": "تسجيل قطيع",
+    "name": "الاسم",
+    "species": "النوع",
+    "birdCount": "عدد الطيور",
+    "recordEggs": "جمع البيض"
+  },
+  "offline": {
+    "online": "متصل",
+    "offline": "غير متصل - ستتم مزامنة التغييرات تلقائياً",
+    "syncing": "جارٍ المزامنة...",
+    "pending": "{{count}} قيد الانتظار"
+  },
+  "common": {
+    "loading": "جارٍ التحميل...",
+    "save": "حفظ",
+    "cancel": "إلغاء",
+    "close": "إغلاق",
+    "back": "رجوع"
+  }
+}

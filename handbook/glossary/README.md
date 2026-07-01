@@ -4,6 +4,8 @@ This glossary defines the official vocabulary of FarmOS.
 
 Every term must have one clear meaning.
 
+See also [Knowledge Model Glossary](knowledge-model.md) and [Farm Entities Glossary](farm-entities.md) for domain-specific terms.
+
 ## Core Terms
 
 ### Observation
