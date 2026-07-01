@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Navigate } from 'react-router-dom'
-import { Sprout } from 'lucide-react'
+import { OrigamiMark } from '@/components/farmos/OrigamiMark'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
@@ -36,9 +36,9 @@ export function LoginPage() {
 
   return (
     <div className="flex min-h-svh items-center justify-center bg-background p-4">
-      <Card className="w-full max-w-sm">
+      <Card className="w-full max-w-sm" folded>
         <CardHeader className="items-center text-center">
-          <Sprout className="h-10 w-10 text-primary" />
+          <OrigamiMark size={48} />
           <CardTitle>{t('app.name')}</CardTitle>
         </CardHeader>
         <CardContent>

@@ -3,7 +3,7 @@ import { Wifi, WifiOff, RefreshCw } from 'lucide-react'
 import { useSyncStatus } from '@/hooks/useSyncStatus'
 import { Badge } from '@/components/ui/badge'
 
-// Ch.13 §13.6 RULE-UX-103: connectivity/sync state visible from any
+// Ch.13 §13.6 RULE-UX-105: connectivity/sync state visible from any
 // screen - workers must never wonder whether their entry was saved.
 export function OfflineStatusIndicator() {
   const { t } = useTranslation()

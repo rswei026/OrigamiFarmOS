@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { useLiveQuery } from 'dexie-react-hooks'
 import { db } from '@/offline/db'
 
-// Backs the OfflineStatusIndicator (Ch.13 §13.4, RULE-UX-103): connectivity
+// Backs the OfflineStatusIndicator (Ch.13 §13.4, RULE-UX-105): connectivity
 // and pending-sync state must be visible from any screen.
 export function useSyncStatus() {
   const [online, setOnline] = useState(navigator.onLine)

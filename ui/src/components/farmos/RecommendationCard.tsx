@@ -31,7 +31,7 @@ export function RecommendationCard({
   const isDecided = recommendation.status !== 'open'
 
   return (
-    <Card>
+    <Card folded>
       <CardHeader className="flex-row items-start justify-between gap-3">
         <div>
           <div className="text-base font-semibold">{entityLabel}</div>

@@ -67,7 +67,7 @@ flowchart TD
 
 ## 16.5 Sync Status Visibility
 
-Per [Chapter 13 §13.6](../13-UI-UX-Design-System/13-UI-UX-Design-System.md#136-offline-status-visibility) (RULE-UX-103), the current sync state is always visible to the user: count of pending items, last successful sync time, and any flagged conflicts requiring attention.
+Per [Chapter 13 §13.6](../13-UI-UX-Design-System/13-UI-UX-Design-System.md#136-offline-status-visibility) (RULE-UX-105), the current sync state is always visible to the user: count of pending items, last successful sync time, and any flagged conflicts requiring attention.
 
 ## 16.6 Connectivity Detection and Retry
 

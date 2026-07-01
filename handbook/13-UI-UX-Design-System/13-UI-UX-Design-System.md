@@ -76,21 +76,33 @@ A UI pattern used in more than one domain chapter (recommendation cards, timelin
 - Simple, high-contrast colors readable in direct sunlight (an outdoor/barn use consideration).
 - Dark/light mode is explicitly deferred (concept note §17), not required for MVP.
 
+### 13.5.1 Brand Identity: Origami, Not Generic Agri-Green
+
+FarmOS deliberately does not use a generic forest-green "farm software" palette. The brand color is a warm coral/terracotta (paper-dye inspired), on a warm "paper" cream background, evoking the product's name rather than a stock agriculture cliché.
+
+### RULE-UX-103 — Status Colors Are Never the Brand Color
+
+Confidence bands (§4.7.3), recommendation priority (§4.5.5), and success/warning/destructive states SHALL use hues distinct from `--color-primary`, so a status badge is never visually confused with a brand/action element (a button, an active nav item). Implemented as CSS custom properties (`ui/src/index.css`) so this mapping is defined once and reused everywhere (RULE-UX-102).
+
+### RULE-UX-104 — The Folded-Corner Motif
+
+FarmOS uses a folded paper corner ("dog-ear") as its one recurring brand motif: the app's logomark (`OrigamiMark`) is a folded paper corner, and the same treatment is available on `Card` (an opt-in `folded` prop) for prominent surfaces — the login card, recommendation cards, section summaries. It SHALL NOT be applied to dense list or timeline cards, where it would add visual noise without adding meaning (Constitution Principle 12 — Simplicity Over Complexity).
+
 ## 13.6 Offline Status Visibility
 
-### RULE-UX-103 — Connectivity State Is Always Visible
+### RULE-UX-105 — Connectivity State Is Always Visible
 
 The current sync/connectivity state (offline, syncing, synced) SHALL be visible from any screen, consistent with Constitution Principle 10 (Offline First) and [Chapter 16 — Offline Synchronization](../16-Offline-Synchronization/16-Offline-Synchronization.md). Workers must never wonder whether their entry was saved.
 
 ## 13.7 Bilingual and RTL Support
 
-### RULE-UX-104 — Arabic and English From Day One
+### RULE-UX-106 — Arabic and English From Day One
 
 Every screen SHALL support both English and Arabic, including right-to-left layout mirroring for Arabic, per Constitution Principle 11/concept note §4.3. Text strings SHALL be externalized (no hard-coded UI strings) from the first screen built, not retrofitted later.
 
 ## 13.8 QR-First Lookup
 
-### RULE-UX-105 — QR Is the Default Entity Lookup Path
+### RULE-UX-107 — QR Is the Default Entity Lookup Path
 
 Animal, Flock, Location, and Feed Lot lookup (Ontology §2.7 REQ-ONT-202) SHALL present QR scanning as the default, one-tap entry point, with text/name search as the fallback, not the other way around.
 

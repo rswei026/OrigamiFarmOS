@@ -4,7 +4,7 @@ import LanguageDetector from 'i18next-browser-languagedetector'
 import en from './locales/en.json'
 import ar from './locales/ar.json'
 
-// RULE-UX-104 (Ch.13 §13.7): English and Arabic supported from the first
+// RULE-UX-106 (Ch.13 §13.7): English and Arabic supported from the first
 // screen, with RTL layout mirroring for Arabic.
 export const RTL_LANGUAGES = ['ar']
 

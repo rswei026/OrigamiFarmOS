@@ -75,7 +75,7 @@ export function BriefingPage() {
       )}
 
       <section>
-        <Card>
+        <Card folded>
           <CardHeader>
             <CardTitle className="text-base">{t('briefing.todaysActivity')}</CardTitle>
           </CardHeader>

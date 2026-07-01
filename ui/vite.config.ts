@@ -18,8 +18,8 @@ export default defineConfig({
         name: 'Origami FarmOS',
         short_name: 'FarmOS',
         description: 'The intelligent operating system for Origami Farms',
-        theme_color: '#166534',
-        background_color: '#ffffff',
+        theme_color: '#e2603f',
+        background_color: '#faf5ee',
         display: 'standalone',
         icons: [
           { src: 'icon-192.svg', sizes: '192x192', type: 'image/svg+xml' },

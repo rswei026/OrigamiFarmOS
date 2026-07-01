@@ -1,44 +1,57 @@
 @import "tailwindcss";
 
 /* FarmOS design tokens - handbook Chapter 13 (UI/UX Design System).
-   Simple, high-contrast colors readable in direct sunlight (§13.5);
-   confidence-band and priority colors are defined once here and reused
-   everywhere (RULE-UX-102: one component/token set, many domains). */
+   Origami-inspired palette: warm paper tones + a coral/terracotta brand
+   color (not green), so the brand reads as "friendly craft" rather than
+   "generic agri-software." Status colors (success/warning/destructive,
+   confidence/priority) are deliberately distinct hues from the primary
+   brand color so a badge is never mistaken for a brand element - defined
+   once here and reused everywhere (RULE-UX-102). */
 @theme {
   --font-sans: "Inter", system-ui, "Segoe UI", Roboto, sans-serif;
 
-  --color-background: #f8faf8;
-  --color-foreground: #14231a;
-  --color-card: #ffffff;
-  --color-card-foreground: #14231a;
-  --color-primary: #166534;
-  --color-primary-foreground: #ffffff;
-  --color-secondary: #e8f3ec;
-  --color-secondary-foreground: #14532d;
-  --color-muted: #f1f4f2;
-  --color-muted-foreground: #5b6b60;
-  --color-border: #dde5e0;
-  --color-ring: #166534;
+  /* Warm "paper" neutrals */
+  --color-background: #faf5ee;
+  --color-foreground: #2b241f;
+  --color-card: #fffdfa;
+  --color-card-foreground: #2b241f;
+  --color-muted: #f2e9dd;
+  --color-muted-foreground: #7a6f61;
+  --color-border: #e8dccb;
+  --color-ring: #e2603f;
 
-  --color-destructive: #b91c1c;
-  --color-destructive-foreground: #ffffff;
-  --color-warning: #b45309;
-  --color-warning-foreground: #ffffff;
-  --color-success: #15803d;
-  --color-success-foreground: #ffffff;
+  /* Brand: origami coral/terracotta */
+  --color-primary: #e2603f;
+  --color-primary-foreground: #fffdfa;
+  --color-secondary: #fbe6da;
+  --color-secondary-foreground: #8a3418;
+
+  /* Fold accents: the second and third "paper" tones used by the
+     origami mark and folded-corner card treatment */
+  --color-fold-light: #f7c98e;
+  --color-fold-dark: #c8452c;
+
+  /* Status colors - intentionally not coral, not the old forest green */
+  --color-destructive: #c33f3f;
+  --color-destructive-foreground: #fffdfa;
+  --color-warning: #cf9a2e;
+  --color-warning-foreground: #3a2a06;
+  --color-success: #2f9e8f;
+  --color-success-foreground: #fffdfa;
 
   /* Confidence bands (Ch.4.7 §4.7.3) */
-  --color-confidence-high: #15803d;
-  --color-confidence-medium: #b45309;
-  --color-confidence-low: #6b7280;
+  --color-confidence-high: #2f9e8f;
+  --color-confidence-medium: #cf9a2e;
+  --color-confidence-low: #8a7f71;
 
-  /* Recommendation priority (Ch.4.5.5) */
-  --color-priority-urgent: #b91c1c;
-  --color-priority-high: #c2410c;
-  --color-priority-medium: #b45309;
-  --color-priority-low: #6b7280;
+  /* Recommendation priority (Ch.4.5.5) - kept distinct from --color-primary
+     so an "urgent"/"high" badge never reads as a brand-colored button */
+  --color-priority-urgent: #c33f3f;
+  --color-priority-high: #b5651d;
+  --color-priority-medium: #cf9a2e;
+  --color-priority-low: #8a7f71;
 
-  --radius: 0.75rem;
+  --radius: 1rem;
 }
 
 @layer base {
@@ -68,4 +81,39 @@
 /* RULE-UX-104: Arabic + RTL from day one */
 html[dir="rtl"] {
   text-align: right;
+}
+
+/* Origami folded-corner motif: a dog-eared page corner, reused by the
+   Card component (opt-in via the `folded` prop) and the OrigamiMark logo,
+   so every "sheet" in the product shares one visual language. Applied
+   selectively (Constitution Principle 12) - not on dense list/timeline
+   cards. */
+.fold-corner {
+  position: relative;
+  overflow: hidden;
+}
+.fold-corner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  inset-inline-end: 0;
+  width: 28px;
+  height: 28px;
+  background: linear-gradient(135deg, transparent 50%, var(--color-fold-light) 50%);
+  clip-path: polygon(100% 0, 0 0, 100% 100%);
+}
+.fold-corner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  inset-inline-end: 0;
+  width: 28px;
+  height: 28px;
+  background: var(--color-primary);
+  opacity: 0.12;
+  clip-path: polygon(100% 0, 78% 0, 100% 22%);
+}
+html[dir="rtl"] .fold-corner::before,
+html[dir="rtl"] .fold-corner::after {
+  transform: scaleX(-1);
 }

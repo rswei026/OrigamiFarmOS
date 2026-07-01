@@ -1,4 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" viewBox="0 0 192 192">
-  <rect width="192" height="192" rx="32" fill="#166534"/>
-  <text x="96" y="128" font-family="system-ui, sans-serif" font-size="110" font-weight="700" fill="#ffffff" text-anchor="middle">F</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" viewBox="0 0 64 64">
+  <rect x="4" y="4" width="56" height="56" rx="16" fill="#e2603f"/>
+  <path d="M40 4 L60 4 L60 24 Z" fill="#c8452c" opacity="0.35"/>
+  <path d="M42 4 L60 4 L60 22 Z" fill="#f7c98e"/>
+  <line x1="42" y1="4" x2="60" y2="22" stroke="#c8452c" stroke-width="1.5" opacity="0.5"/>
 </svg>

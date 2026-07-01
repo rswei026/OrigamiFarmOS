@@ -1,10 +1,17 @@
 import * as React from 'react'
 import { cn } from '@/lib/utils'
 
-export function Card({ className, ...props }: React.HTMLAttributes<HTMLDivElement>) {
+export interface CardProps extends React.HTMLAttributes<HTMLDivElement> {
+  /** Origami dog-ear corner treatment (Ch.13 design system) - opt-in for
+   * prominent surfaces (login, recommendation cards, section summaries).
+   * Left off on dense list/timeline cards per Constitution Principle 12. */
+  folded?: boolean
+}
+
+export function Card({ className, folded, ...props }: CardProps) {
   return (
     <div
-      className={cn('rounded-2xl border border-border bg-card text-card-foreground shadow-sm', className)}
+      className={cn('rounded-2xl border border-border bg-card text-card-foreground shadow-sm', folded && 'fold-corner', className)}
       {...props}
     />
   )

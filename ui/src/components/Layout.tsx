@@ -2,6 +2,7 @@ import { NavLink, Outlet } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { Sunrise, Beef, Bird, Lightbulb, LogOut, Languages } from 'lucide-react'
 import { OfflineStatusIndicator } from '@/components/farmos/OfflineStatusIndicator'
+import { OrigamiMark } from '@/components/farmos/OrigamiMark'
 import { useAuth } from '@/context/AuthContext'
 import { cn } from '@/lib/utils'
 
@@ -21,7 +22,10 @@ export function Layout() {
   return (
     <div className="mx-auto flex min-h-svh max-w-5xl flex-col">
       <header className="flex flex-wrap items-center justify-between gap-3 border-b border-border bg-card px-4 py-3">
-        <div className="text-lg font-bold text-primary">{t('app.name')}</div>
+        <div className="flex items-center gap-2 text-lg font-bold text-primary">
+          <OrigamiMark size={26} />
+          {t('app.name')}
+        </div>
         <div className="flex items-center gap-3">
           <OfflineStatusIndicator />
           <button

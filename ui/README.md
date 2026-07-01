@@ -34,7 +34,7 @@ npm run build   # production build + service worker (installable PWA)
 - `src/components/farmos/` - FarmOS-specific shared components (Ch.13 §13.4): `RecommendationCard`, `Timeline`, `ConfidenceBadge`, `PriorityBadge`, `OfflineStatusIndicator`, `QuickActionBar`, and the Feed/Milk/Egg/Observation quick-action dialogs.
 - `src/offline/` - Dexie (IndexedDB) local store and sync queue (Ch.16), playing the role the handbook assigns to local SQLite (see ADR-009's "Local/Offline Tier").
 - `src/api/` - typed API client and endpoint functions (Ch.15).
-- `src/i18n/` - English/Arabic locales with RTL layout mirroring (RULE-UX-104).
+- `src/i18n/` - English/Arabic locales with RTL layout mirroring (RULE-UX-106).
 - `src/pages/` - Login, Morning Briefing, Animals, Flocks, Recommendations.
 
 ## What's implemented in this pass
