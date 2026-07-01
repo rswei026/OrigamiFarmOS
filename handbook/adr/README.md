@@ -25,3 +25,5 @@ Each ADR should include:
 - [ADR-006 — Digital Twin Data Model](ADR-006-Digital-Twin-Data-Model.md)
 - [ADR-007 — Explainable Intelligence](ADR-007-Explainable-Intelligence.md)
 - [ADR-008 — Repository as Single Source of Truth](ADR-008-Repository-Single-Source-of-Truth.md)
+- [ADR-009 — Technology Stack Selection](ADR-009-Technology-Stack-Selection.md)
+- [ADR-010 — AI Integration Architecture](ADR-010-AI-Integration-Architecture.md)

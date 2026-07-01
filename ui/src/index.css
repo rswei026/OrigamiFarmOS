@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+/* FarmOS design tokens - handbook Chapter 13 (UI/UX Design System).
+   Simple, high-contrast colors readable in direct sunlight (§13.5);
+   confidence-band and priority colors are defined once here and reused
+   everywhere (RULE-UX-102: one component/token set, many domains). */
+@theme {
+  --font-sans: "Inter", system-ui, "Segoe UI", Roboto, sans-serif;
+
+  --color-background: #f8faf8;
+  --color-foreground: #14231a;
+  --color-card: #ffffff;
+  --color-card-foreground: #14231a;
+  --color-primary: #166534;
+  --color-primary-foreground: #ffffff;
+  --color-secondary: #e8f3ec;
+  --color-secondary-foreground: #14532d;
+  --color-muted: #f1f4f2;
+  --color-muted-foreground: #5b6b60;
+  --color-border: #dde5e0;
+  --color-ring: #166534;
+
+  --color-destructive: #b91c1c;
+  --color-destructive-foreground: #ffffff;
+  --color-warning: #b45309;
+  --color-warning-foreground: #ffffff;
+  --color-success: #15803d;
+  --color-success-foreground: #ffffff;
+
+  /* Confidence bands (Ch.4.7 §4.7.3) */
+  --color-confidence-high: #15803d;
+  --color-confidence-medium: #b45309;
+  --color-confidence-low: #6b7280;
+
+  /* Recommendation priority (Ch.4.5.5) */
+  --color-priority-urgent: #b91c1c;
+  --color-priority-high: #c2410c;
+  --color-priority-medium: #b45309;
+  --color-priority-low: #6b7280;
+
+  --radius: 0.75rem;
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    margin: 0;
+    min-height: 100svh;
+  }
+  #root {
+    min-height: 100svh;
+  }
+  /* Constitution Principle 11 (Tablet First) / RULE-UX-101: large touch
+     targets everywhere, no reliance on fine-motor gestures. */
+  button, [role="button"] {
+    touch-action: manipulation;
+  }
+}
+
+/* RULE-UX-104: Arabic + RTL from day one */
+html[dir="rtl"] {
+  text-align: right;
+}

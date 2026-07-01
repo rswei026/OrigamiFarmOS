@@ -30,31 +30,47 @@ Outputs: GitHub repository, [Constitution](../CONSTITUTION.md), [Concept Note](.
 - [x] MVP scope document
 - [x] Roadmap (this document)
 - [x] Initial glossary
-- [ ] Backend/mobile/database scaffolding (Phase 1, deliberately not started — see [handbook/CONSTITUTION.md Principle 19](../CONSTITUTION.md))
+- [x] Backend/mobile/database scaffolding — started as a web PWA rather than mobile-native this pass (see [ADR-009](../handbook/adr/ADR-009-Technology-Stack-Selection.md))
 
 ## Phase 1 — Core Farm Setup
 
-**Status: Planned**
+**Status: Implemented (this pass)**
 
 Outputs: Farm profile, users and roles, locations, basic offline database, language structure, initial sync architecture.
 
 References: [Ontology (Ch. 2)](../handbook/02-Ontology.md), [Security (Ch. 17)](../handbook/17-Security/17-Security.md), [Database Architecture (Ch. 14)](../handbook/14-Database-Architecture/14-Database-Architecture.md), [Offline Synchronization (Ch. 16)](../handbook/16-Offline-Synchronization/16-Offline-Synchronization.md).
 
+- [x] Farm, Location, User/role models + JWT auth (`backend/`)
+- [x] PostgreSQL schema via Alembic
+- [x] English/Arabic + RTL UI language layer (`ui/src/i18n/`)
+- [x] Offline write queue (IndexedDB/Dexie) — no container/mobile deployment yet
+
 ## Phase 2 — Animal and Flock Foundation
 
-**Status: Planned**
+**Status: Implemented (this pass)**
 
 Outputs: Animal registry, flock registry, QR code support, animal profile, timeline, basic health status.
 
 References: [Animal Digital Twin (Ch. 5)](../handbook/05-Animal-Digital-Twin/05-Animal-Digital-Twin.md), [Knowledge Timeline (4.8)](../handbook/04-Knowledge-Model/04.8-Knowledge-Timeline.md).
 
+- [x] Animal + Flock registry and profile pages
+- [x] Timeline (Ch.4.8) reused across both entity types
+- [ ] QR code generation/scanning (not implemented this pass)
+- [x] Basic health status (derived recommendations, not a full lifecycle state machine yet)
+
 ## Phase 3 — Morning Routine MVP
 
-**Status: Planned**
+**Status: Implemented (this pass)**
 
 Outputs: Morning briefing, feeding workflow, milk workflow, egg workflow, observation workflow, task completion.
 
 References: [Behavioral Model §3.4](../handbook/03-Behavioral-Model.md#34-the-daily-behavioral-loop), [Feed (Ch. 6)](../handbook/06-Feed/06-Feed-Management.md), [Dairy (Ch. 7)](../handbook/07-Dairy/07-Dairy-Management.md), [Poultry (Ch. 8)](../handbook/08-Poultry/08-Poultry-Management.md).
+
+- [x] Morning Briefing endpoint + page
+- [x] Feeding, milk, egg-collection, and observation workflows
+- [ ] Task completion / task assignment model (not implemented; briefing surfaces recommendations, not assigned tasks)
+
+See [product/TRACEABILITY.md](TRACEABILITY.md) for the chapter-by-chapter detail behind these three phases, including what's implemented versus verified.
 
 ## Phase 4 — Health and Veterinary
 
@@ -74,11 +90,13 @@ References: [Inventory (Ch. 10)](../handbook/10-Inventory/10-Inventory-Managemen
 
 ## Phase 6 — Intelligence and Reports
 
-**Status: Planned**
+**Status: Partially implemented (pulled forward this pass)**
 
 Outputs: Rule-based alerts, health recommendations, feed shortage forecast, production trends, daily/weekly/monthly reports, recommendation feedback loop.
 
 References: [Knowledge Model (Ch. 4)](../handbook/04-Knowledge-Model/README.md), [Decision Intelligence (4.6)](../handbook/04-Knowledge-Model/04.6-Decision-Intelligence.md), [Knowledge Feedback Loop (4.9)](../handbook/04-Knowledge-Model/04.9-Knowledge-Feedback-Loop.md).
+
+Rule-based alerts, health recommendations, and feed shortage forecast were implemented ahead of schedule in this pass, since the Phase 3 health-decline demonstration required them. Daily/Weekly/Monthly/Quarterly review aggregation (beyond a simple status filter) and the recommendation feedback loop (Ch.4.9 — outcome capture, accuracy tracking) are not yet implemented.
 
 ## Phase 7 — Origami Farms Pilot
 

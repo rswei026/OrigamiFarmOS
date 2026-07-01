@@ -1,0 +1,89 @@
+{
+  "app": { "name": "Origami FarmOS" },
+  "auth": {
+    "login": "Log In",
+    "email": "Email",
+    "password": "Password",
+    "loginCta": "Start My Day",
+    "loginError": "Incorrect email or password",
+    "loggingIn": "Logging in..."
+  },
+  "nav": {
+    "briefing": "Morning Briefing",
+    "animals": "Animals",
+    "flocks": "Flocks",
+    "recommendations": "Recommendations",
+    "logout": "Log out"
+  },
+  "briefing": {
+    "title": "Good morning, {{name}}",
+    "subtitle": "Here is what needs attention today.",
+    "urgent": "Urgent & High Priority",
+    "noUrgent": "No urgent recommendations right now. Nice work.",
+    "feedWarnings": "Feed Stock Warnings",
+    "daysRemaining": "{{days}} days remaining",
+    "todaysActivity": "Today's Activity",
+    "milkRecorded": "Milk recorded",
+    "eggsRecorded": "Eggs recorded",
+    "observationsRecorded": "{{count}} observations recorded",
+    "notYet": "Not yet",
+    "done": "Done",
+    "startDay": "Start My Day"
+  },
+  "quickActions": {
+    "feed": "Feed",
+    "milk": "Milk",
+    "eggs": "Collect Eggs",
+    "observe": "Observe"
+  },
+  "recommendation": {
+    "confidence": "Confidence",
+    "priority": "Priority",
+    "suggestedAction": "Suggested action",
+    "missingInfo": "Missing",
+    "accept": "Accept",
+    "reject": "Reject",
+    "monitor": "Monitor",
+    "reasonRequired": "A reason is required to reject a recommendation.",
+    "reason": "Reason",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "status": "Status",
+    "noRecommendations": "No recommendations match this filter."
+  },
+  "animal": {
+    "register": "Register Animal",
+    "tagNumber": "Tag Number",
+    "name": "Name",
+    "species": "Species",
+    "breed": "Breed",
+    "sex": "Sex",
+    "male": "Male",
+    "female": "Female",
+    "status": "Status",
+    "timeline": "Timeline",
+    "recordFeed": "Record Feed",
+    "recordMilk": "Record Milk",
+    "recordObservation": "Record Observation"
+  },
+  "flock": {
+    "register": "Register Flock",
+    "name": "Name",
+    "species": "Species",
+    "birdCount": "Bird Count",
+    "recordEggs": "Collect Eggs"
+  },
+  "offline": {
+    "online": "Online",
+    "offline": "Offline - changes will sync automatically",
+    "syncing": "Syncing...",
+    "pending": "{{count}} pending"
+  },
+  "common": {
+    "loading": "Loading...",
+    "save": "Save",
+    "cancel": "Cancel",
+    "close": "Close",
+    "back": "Back"
+  }
+}

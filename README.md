@@ -13,6 +13,13 @@ FarmOS helps farmers make better decisions with less effort by turning worker ob
 - [product/ROADMAP.md](product/ROADMAP.md) — the phased delivery plan
 - [IMPLEMENTATION_STATUS.md](IMPLEMENTATION_STATUS.md) — current status by area
 
+## Running It
+
+- [backend/README.md](backend/README.md) — FastAPI + PostgreSQL API (setup, migrations, seed data)
+- [ui/README.md](ui/README.md) — React + TypeScript PWA (offline-first, bilingual English/Arabic)
+
 ## Current Status
 
-Phase 0 (Engineering Repository Setup) is complete: the Constitution, Concept Note, and full Engineering Handbook are drafted. No application code has been written yet — per Constitution Principle 19, architecture is specified before implementation begins. See [product/ROADMAP.md](product/ROADMAP.md) for what's next.
+Phase 0 (Engineering Repository Setup) is complete: the Constitution, Concept Note, and full Engineering Handbook are drafted, per Constitution Principle 19 (architecture before implementation).
+
+A first vertical slice of Phases 1-3 is implemented: farm/user/role foundation, the Animal and Flock digital twins, Feed/Milk/Egg-collection/Observation workflows, a rule-based Knowledge Engine producing explainable, evidence-based recommendations, Decision recording, and the Morning Briefing — backed by a FastAPI/PostgreSQL backend and a React PWA frontend. See [backend/README.md](backend/README.md) and [ui/README.md](ui/README.md) for what's implemented versus deferred, and [product/TRACEABILITY.md](product/TRACEABILITY.md) / [product/ROADMAP.md](product/ROADMAP.md) for what's next.
