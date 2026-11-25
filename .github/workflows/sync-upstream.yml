@@ -1,0 +1,48 @@
+name: Sync upstream OrigamiFarmOS
+
+on:
+  schedule:
+    - cron: '17 6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: origami-upstream-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    if: github.repository == 'rswei026/OrigamiFarmOS'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout fork
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Fetch upstream and update sync branch
+        shell: bash
+        env:
+          UPSTREAM_REPO: https://github.com/achamseddine/OrigamiFarmOS.git
+          UPSTREAM_BRANCH: claude/origami-farmos-tablet-mvp-u88i3e
+          SYNC_BRANCH: sync/upstream-latest
+        run: |
+          set -euo pipefail
+          git remote add upstream "$UPSTREAM_REPO"
+          git fetch --no-tags upstream "refs/heads/$UPSTREAM_BRANCH"
+          incoming="$(git rev-parse FETCH_HEAD)"
+          if git show-ref --verify --quiet "refs/remotes/origin/$SYNC_BRANCH"; then
+            current="$(git rev-parse "refs/remotes/origin/$SYNC_BRANCH")"
+            if [[ "$current" == "$incoming" ]]; then
+              echo 'Already synchronized.'
+              exit 0
+            fi
+            if ! git merge-base --is-ancestor "$current" "$incoming"; then
+              echo '::error::Upstream history was rewritten or diverged. Manual review required.'
+              exit 1
+            fi
+          fi
+          git push origin "$incoming:refs/heads/$SYNC_BRANCH"
+          echo "Synced $SYNC_BRANCH to $incoming. Review before merging into deployed branch."
